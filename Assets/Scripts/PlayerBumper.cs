@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerBumper : Bumper
 {
-    private Vector3 _direction;
+    private Vector3 _direction;//consider going back through everything and making them [SerializeField] private instead of public
 
-    public PlayerInput playerInput; //consider going back through everything and making them [SerializeField] private instead of public
+    public PlayerInput playerInput; 
 
     // Start is called before the first frame update
     void Start()
@@ -18,19 +16,7 @@ public class PlayerBumper : Bumper
     // Update is called once per frame
     void Update()
     {
-        //transform.Translate(0f, Input.GetAxis("Vertical") * speed * Time.deltaTime, 0);
-        /*if ( Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-        {
-            _direction = Vector3.up;
-        }
-        else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-            _direction = Vector3.down;
-        }
-        else
-        {
-            _direction = Vector3.zero;
-        }*/
+
     }
 
     private void FixedUpdate()
@@ -43,7 +29,6 @@ public class PlayerBumper : Bumper
 
     public void OnMove(InputValue input)
     {
-        //doStuff
         var inputVector = input.Get<Vector3>();
         _direction = new Vector3(0f, inputVector.y, 0f);
     }
