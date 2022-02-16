@@ -6,15 +6,6 @@
             "id": "070423c7-0ea0-496d-a0ce-a6f263f3b9ed",
             "actions": [
                 {
-                    "name": "UpDown",
-                    "type": "Button",
-                    "id": "eca9a180-e658-45bc-b0f1-3bdcdcd04b6d",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Move",
                     "type": "Value",
                     "id": "21140034-5484-4286-8460-167ba43ddd42",
@@ -22,75 +13,18 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "89a42b1a-1e43-43e9-8e53-4fdbc913623e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
-                {
-                    "name": "Up",
-                    "id": "05a1c116-e4d8-43d7-bd1c-a5eb5b00dd18",
-                    "path": "TwoModifiers",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "UpDown",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "binding",
-                    "id": "a744be30-e33d-4a95-9bea-f808968a4cf4",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "UpDown",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "binding",
-                    "id": "fb889a16-2bd5-4cd0-9469-8a39d777d574",
-                    "path": "<Keyboard>/upArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "UpDown",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "Down",
-                    "id": "49b03458-6a98-4982-a559-3b7e7845ff64",
-                    "path": "OneModifier",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "UpDown",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "binding",
-                    "id": "fb111d3c-46e3-4945-b2a0-3b421dc6efbe",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "UpDown",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "binding",
-                    "id": "11ca7cbb-90bd-41ad-9386-312ced0c41a1",
-                    "path": "<Keyboard>/downArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "UpDown",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
                 {
                     "name": "3D Vector",
                     "id": "8a1e2097-6fa6-445e-80f3-c28521a63e90",
@@ -145,6 +79,17 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "fe2599a0-886c-4c30-a4fe-3c04ea9798d7",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

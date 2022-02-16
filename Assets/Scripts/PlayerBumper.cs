@@ -7,18 +7,6 @@ public class PlayerBumper : Bumper
 
     public PlayerInput playerInput; 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void FixedUpdate()
     {
         if (_direction.sqrMagnitude != 0)
@@ -31,5 +19,10 @@ public class PlayerBumper : Bumper
     {
         var inputVector = input.Get<Vector3>();
         _direction = new Vector3(0f, inputVector.y, 0f);
+    }
+
+    public void OnPause(InputValue input)//need to move this to it's own area and own pause input action class etc
+    {
+        
     }
 }
