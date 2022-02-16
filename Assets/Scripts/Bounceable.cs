@@ -14,7 +14,8 @@ public class Bounceable : MonoBehaviour
         {
             Vector3 normal = collision.GetContact(0).normal;
             //ball.UpdateForce(-normal * bounceStrength);
-            Vector3.Reflect(ball.transform.position, normal*bounceStrength);
+            var temp = Vector3.Reflect(ball.transform.position, normal*bounceStrength);
+            ball.UpdateForce(temp);
         }
     }
 }
