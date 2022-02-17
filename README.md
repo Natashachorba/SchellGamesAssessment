@@ -1,6 +1,8 @@
 # Simple Game for Schell Games Assessment
 Using Unity version 2020.3.28f1
+Chose to build Pong
 
+## Requirements:
 Option 1 — Bouncing Ball Game (e.g. **Pong**, Breakout)
 Option 2 — Tile-based Puzzle Game (e.g. Bejeweled, Tetris, Minesweeper)
 
